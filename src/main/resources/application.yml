@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:postgresql://localhost:5432/postgres
+      username: postgres
+      password: password
+      driver-class-name: org.postgresql.Driver
+
+springdoc:
+  api-docs:
+    enabled: true
+
+server:
+  servlet.context-path: /api
+  port: 8080
+
+rsa:
+  public-key: classpath:certs/public.pem
+  private-key: classpath:certs/private.pem
